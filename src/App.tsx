@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
 import ProTip from "./ProTip";
+import { Counter } from "./features/counter/Counter";
 
 function Copyright() {
   return (
@@ -19,11 +20,12 @@ function Copyright() {
 
 function App() {
   return (
-    <Container maxWidth="sm">
+    <Container maxWidth="lg">
       <Box sx={{ my: 4 }}>
         <Typography variant="h4" component="h1" gutterBottom>
           Create React App example with TypeScript
         </Typography>
+        <Counter />
         <ProTip />
         <Copyright />
       </Box>
