@@ -1,14 +1,14 @@
 import ProTip from "./ProTip";
-import { Counter } from "./features/counter/Counter";
 import { Typography } from "@mui/material";
+import ListaContactos from "./features/contactos/ListaContactos";
 
 export default function Home() {
   return (
     <>
       <Typography variant="h4" component="h1" gutterBottom>
-        Create React App example with TypeScript
+        Contactos
       </Typography>
-      <Counter />
+      <ListaContactos />
       <ProTip />
     </>
   );
