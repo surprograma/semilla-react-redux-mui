@@ -4,9 +4,10 @@ import { Provider } from "react-redux";
 import { store } from "./app/store";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material/styles";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import theme from "./theme";
+import { RouterProvider } from "react-router-dom";
+import router from "./router";
 
 const container = document.getElementById("root")!;
 const root = createRoot(container);
@@ -16,7 +17,7 @@ root.render(
     <Provider store={store}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <App />
+        <RouterProvider router={router} />
       </ThemeProvider>
     </Provider>
   </React.StrictMode>

@@ -5,6 +5,7 @@
 - [React](https://reactjs.org/): framework para construir interfaces de usuario.
 - [Redux Toolkit (RTK)](https://redux-toolkit.js.org/): biblioteca para manejar estado en React.
 - [Material UI](https://material-ui.com/): sistema de componentes visuales para React.
+- [React Router](https://reactrouter.com/): biblioteca para manejar rutas en React.
 - [Jest](https://jestjs.io/): framework para escribir tests.
 
 Para crear un proyecto siguiendo esta plantilla, lo único que tenés que hacer es clickear en el botón que dice `Use this template`. ¡Y no te olvides de cambiarle el nombre en el `package.json`!
