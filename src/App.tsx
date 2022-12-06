@@ -8,12 +8,12 @@ import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import { Outlet } from "react-router-dom";
 
-function Copyright() {
+function Copyleft() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
-      {"Copyright © "}
+      {"Copyleft 🄯 "}
       <Link color="inherit" href="https://mui.com/">
-        Your Website
+        El Sur también programa
       </Link>{" "}
       {new Date().getFullYear()}.
     </Typography>
@@ -43,7 +43,7 @@ function App() {
         <Box my={4}>
           <Outlet />
         </Box>
-        <Copyright />
+        <Copyleft />
       </Container>
     </>
   );

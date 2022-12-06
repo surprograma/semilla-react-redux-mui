@@ -1,4 +1,3 @@
-import ProTip from "./ProTip";
 import { Typography } from "@mui/material";
 import ListaContactos from "./features/contactos/ListaContactos";
 
@@ -9,7 +8,6 @@ export default function Home() {
         Contactos
       </Typography>
       <ListaContactos />
-      <ProTip />
     </>
   );
 }
