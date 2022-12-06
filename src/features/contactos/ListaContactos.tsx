@@ -19,11 +19,7 @@ export default function ListaContactos() {
       {contactos.map((it) => (
         <ListItem
           secondaryAction={
-            <Button
-              variant="contained"
-              component={Link}
-              to={`/contactos/${it.id}`}
-            >
+            <Button component={Link} to={`/contactos/${it.id}`}>
               Ver detalles
             </Button>
           }

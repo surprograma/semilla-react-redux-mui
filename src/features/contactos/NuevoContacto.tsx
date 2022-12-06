@@ -34,7 +34,9 @@ export default function NuevoContacto() {
         value={edad}
         onChange={(e) => setEdad(e.target.value)}
       />
-      <Button onClick={guardar}>Agregar</Button>
+      <Button variant="contained" onClick={guardar}>
+        Agregar
+      </Button>
     </Stack>
   );
 }
