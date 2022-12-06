@@ -16,7 +16,7 @@ export interface ContactosState {
 
 const initialState: ContactosState = {
   todos: [
-    { id: 1, nombre: "Juana Azurduy", edad: 32 },
+    { id: 1, nombre: "Bartolina Sisa", edad: 32 },
     { id: 2, nombre: "Tupac Katari", edad: 31 },
   ],
 };
