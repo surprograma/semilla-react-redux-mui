@@ -7,17 +7,17 @@ import {
   Button,
 } from "@mui/material";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import { useAppSelector } from "../../app/hooks";
-import { selectContactos } from "./contactosSlice";
 import { Link } from "react-router-dom";
+import { useGetContactosQuery } from "../../app/services/contactosApi";
 
 export default function ListaContactos() {
-  const contactos = useAppSelector(selectContactos);
+  const { data, error, isLoading } = useGetContactosQuery();
 
   return (
     <List>
-      {contactos.map((it) => (
+      {data?.map((it) => (
         <ListItem
+          key={it.id}
           secondaryAction={
             <Button component={Link} to={`/contactos/${it.id}`}>
               Ver detalles

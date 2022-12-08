@@ -1,16 +1,15 @@
 import { Button, Stack, TextField } from "@mui/material";
 import { useState } from "react";
-import { useAppDispatch } from "../../app/hooks";
-import { agregarContacto } from "./contactosSlice";
+import { useCreateContactoMutation } from "../../app/services/contactosApi";
 
 export default function NuevoContacto() {
   const [nombre, setNombre] = useState("");
   const [edad, setEdad] = useState("");
 
-  const dispatch = useAppDispatch();
+  const [agregarContacto] = useCreateContactoMutation();
 
   const guardar = () => {
-    dispatch(agregarContacto({ nombre, edad: parseInt(edad) }));
+    agregarContacto({ nombre, edad: parseInt(edad) });
     setNombre("");
     setEdad("");
   };

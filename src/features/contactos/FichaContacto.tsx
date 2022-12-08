@@ -5,13 +5,14 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Link, useParams } from "react-router-dom";
-import { useAppSelector } from "../../app/hooks";
-import { selectContactoPorId } from "./contactosSlice";
 import { Grid } from "@mui/material";
+import { useGetContactoByIdQuery } from "../../app/services/contactosApi";
 
 export default function FichaContacto() {
   const { id } = useParams();
-  const contacto = useAppSelector(selectContactoPorId(parseInt(id as string)));
+  const { data, error, isLoading } = useGetContactoByIdQuery(
+    parseInt(id as string)
+  );
 
   return (
     <Grid container justifyContent="center">
@@ -19,10 +20,10 @@ export default function FichaContacto() {
         <Card>
           <CardContent>
             <Typography variant="h5" component="div">
-              {contacto?.nombre}
+              {data?.nombre}
             </Typography>
             <Typography sx={{ mb: 1.5 }} color="text.secondary">
-              {contacto?.edad} años
+              {data?.edad} años
             </Typography>
           </CardContent>
           <CardActions>
