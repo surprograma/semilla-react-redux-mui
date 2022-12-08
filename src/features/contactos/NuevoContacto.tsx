@@ -1,12 +1,14 @@
-import { Button, Stack, TextField } from "@mui/material";
+import { LoadingButton } from "@mui/lab";
+import { Stack, TextField } from "@mui/material";
 import { useState } from "react";
 import { useCreateContactoMutation } from "../../app/services/contactosApi";
+import SaveIcon from "@mui/icons-material/Save";
 
 export default function NuevoContacto() {
   const [nombre, setNombre] = useState("");
   const [edad, setEdad] = useState("");
 
-  const [agregarContacto] = useCreateContactoMutation();
+  const [agregarContacto, { isLoading }] = useCreateContactoMutation();
 
   const guardar = () => {
     agregarContacto({ nombre, edad: parseInt(edad) });
@@ -33,9 +35,15 @@ export default function NuevoContacto() {
         value={edad}
         onChange={(e) => setEdad(e.target.value)}
       />
-      <Button variant="contained" onClick={guardar}>
-        Agregar
-      </Button>
+      <LoadingButton
+        loading={isLoading}
+        loadingPosition="start"
+        variant="contained"
+        startIcon={<SaveIcon />}
+        onClick={guardar}
+      >
+        Guardar
+      </LoadingButton>
     </Stack>
   );
 }
