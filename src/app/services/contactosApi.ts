@@ -24,7 +24,7 @@ export const contactosApi = createApi({
       providesTags: (result) =>
         result?.map(({ id }) => ({ type: "Contacto", id })) ?? [],
     }),
-    getContactoById: builder.query<Contacto, number>({
+    getContactoById: builder.query<Contacto, number | string>({
       query: (id) => `/${id}`,
       providesTags: (result) =>
         result === undefined ? [] : [{ type: "Contacto", id: result.id }],

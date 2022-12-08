@@ -27,7 +27,11 @@ function FalsoContacto() {
   );
 }
 
-function ContactoItem(contacto: Contacto) {
+interface ContactoItemParams {
+  contacto: Contacto;
+}
+
+function ContactoItem({ contacto }: ContactoItemParams) {
   return (
     <ListItem
       key={contacto.id}
@@ -74,7 +78,7 @@ export default function ListaContactos() {
             </ListItem>,
             5
           )
-        : data?.map(ContactoItem)}
+        : data?.map((it) => <ContactoItem contacto={it} />)}
       {isFetching && (
         <ListItem>
           <FalsoContacto />
