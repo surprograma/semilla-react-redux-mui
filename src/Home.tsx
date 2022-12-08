@@ -1,6 +1,6 @@
-import { Typography, Stack } from "@mui/material";
-import ListaContactos from "./features/contactos/ListaContactos";
-import NuevoContacto from "./features/contactos/NuevoContacto";
+import { Typography, Stack } from '@mui/material';
+import ListaContactos from './features/contactos/ListaContactos';
+import NuevoContacto from './features/contactos/NuevoContacto';
 
 export default function Home() {
   return (

@@ -9,14 +9,14 @@ import {
   AlertTitle,
   Skeleton,
   Stack,
-} from "@mui/material";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import { Link } from "react-router-dom";
+} from '@mui/material';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import { Link } from 'react-router-dom';
 import {
   Contacto,
   useGetContactosQuery,
-} from "../../app/services/contactosApi";
-import { repeat } from "ramda";
+} from '../../app/services/contactosApi';
+import { repeat } from 'ramda';
 
 function FalsoContacto() {
   return (
@@ -63,7 +63,7 @@ export default function ListaContactos() {
         <AlertTitle>
           Ocurrió un error al intentar acceder a la API. ¿Está levantada? 🤔
         </AlertTitle>
-        El error que arrojó la request es{" "}
+        El error que arrojó la request es{' '}
         <i>{JSON.stringify(error, undefined, 2)}</i>
       </Alert>
     );
@@ -76,7 +76,7 @@ export default function ListaContactos() {
             <ListItem>
               <FalsoContacto />
             </ListItem>,
-            5
+            5,
           )
         : data?.map((it) => <ContactoItem contacto={it} />)}
       {isFetching && (

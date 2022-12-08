@@ -1,15 +1,15 @@
-import React from "react";
-import { createRoot } from "react-dom/client";
-import { Provider } from "react-redux";
-import { store } from "./app/store";
-import CssBaseline from "@mui/material/CssBaseline";
-import { ThemeProvider } from "@mui/material/styles";
-import reportWebVitals from "./reportWebVitals";
-import theme from "./theme";
-import { RouterProvider } from "react-router-dom";
-import router from "./router";
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import { Provider } from 'react-redux';
+import { store } from './app/store';
+import CssBaseline from '@mui/material/CssBaseline';
+import { ThemeProvider } from '@mui/material/styles';
+import reportWebVitals from './reportWebVitals';
+import theme from './theme';
+import { RouterProvider } from 'react-router-dom';
+import router from './router';
 
-const container = document.getElementById("root")!;
+const container = document.getElementById('root')!;
 const root = createRoot(container);
 
 root.render(
@@ -20,7 +20,7 @@ root.render(
         <RouterProvider router={router} />
       </ThemeProvider>
     </Provider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,15 +1,15 @@
-import React from "react";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import { Link, useParams } from "react-router-dom";
-import { Grid, Skeleton } from "@mui/material";
+import React from 'react';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import { Link, useParams } from 'react-router-dom';
+import { Grid, Skeleton } from '@mui/material';
 import {
   Contacto,
   useGetContactoByIdQuery,
-} from "../../app/services/contactosApi";
+} from '../../app/services/contactosApi';
 
 interface DetalleContactoParams {
   contacto: Contacto;
