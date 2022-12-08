@@ -22,6 +22,8 @@ Vas a necesitar un IDE o al menos un editor de texto que coloree la sintaxis. Re
 
 Para ejecutar el código es necesario tener NodeJS en su versión 18 (`lts/hydrogen`). Para instalarlo recomendamos utilizar el manejador de versiones [`nvm`](https://github.com/nvm-sh/nvm), aunque también podés hacerlo manualmente siguiendo las instrucciones adecuadas para tu sistema operativo.
 
+⚠️ El ejemplo viene preparado para ser ejecutado junto a una API, que puede crearse desde [este repositorio](https://github.com/surprograma/semilla-nest-typeorm).
+
 ## :file_folder: Estructura de directorios
 
 Breve descripción de qué se puede encontrar en cada uno de los directorios del proyecto:
