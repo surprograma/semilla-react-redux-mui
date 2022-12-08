@@ -1,6 +1,7 @@
 {
   "name": "react-rtk-mui",
   "version": "0.1.0",
+  "author": "Federico Aloi",
   "license": "MIT",
   "dependencies": {
     "@emotion/react": "^11.10.5",
