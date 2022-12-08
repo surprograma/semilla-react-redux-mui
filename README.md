@@ -32,6 +32,7 @@ Breve descripción de qué se puede encontrar en cada uno de los directorios del
 ├── public                  # Index, favicon y otros archivos comunes
 └── src
     ├── app                 # Archivos raíz de RTK
+    │   └── services        # APIs de RTK Query
     └── features            # Componentes de React
 ```
 
