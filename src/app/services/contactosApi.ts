@@ -37,7 +37,7 @@ const contactosApi = baseApi
       getContactoById: builder.query<Contacto, number | string>({
         query: (id) => `/contactos/${id}`,
         providesTags: (result) =>
-          result === undefined ? [] : [{ type: 'Contacto', id: result.id }],
+          result ? [{ type: 'Contacto', id: result.id }] : [],
       }),
     }),
   });
