@@ -24,6 +24,22 @@ Para ejecutar el código es necesario tener NodeJS en su versión 18 (`lts/hydro
 
 ⚠️ El ejemplo viene preparado para ser ejecutado junto a una API, que puede crearse desde [este repositorio](https://github.com/surprograma/semilla-nest-typeorm).
 
+## :ballot_box_with_check: Configuración inicial del proyecto
+
+Asumiendo que ya configuraste todos los prerrequisitos, estos son los comandos que deberías ejecutar la primera vez que trabajes en el proyecto:
+
+```shell
+# Instala las dependencias Node del proyecto.
+npm install
+```
+
+Por defecto, el proyecto espera que la API esté levantada en `localhost:4000`. Si se quiere modificar el puerto o la URL, es posible hacerlo creando un archivo `.env` y editando la variable correspondiente:
+
+```shell
+# Copia el archivo .env de ejemplo
+cp .env.example .env
+```
+
 ## :file_folder: Estructura de directorios
 
 Breve descripción de qué se puede encontrar en cada uno de los directorios del proyecto:
