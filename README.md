@@ -1,5 +1,7 @@
 # Repositorio semilla: aplicación React + RTK + MUI :seedling:
 
+> :information_source: Este proyecto fue creado con [Create React App](https://create-react-app.dev/), y por lo tanto toda la documentación del sitio oficial también puede consultarse para saber más.
+
 ¡Bienvenida/o! En este repositorio encontrarás una plantilla (de las infinitas posibles) para crear una aplicación web con React. Las principales tecnologías que utilizamos son:
 
 - [React](https://reactjs.org/): framework para construir interfaces de usuario.
@@ -10,9 +12,9 @@
 
 Para crear un proyecto siguiendo esta plantilla, lo único que tenés que hacer es clickear en el botón que dice `Use this template`. ¡Y no te olvides de cambiarle el nombre en el `package.json`!
 
-:information_source: Este proyecto fue creado con [Create React App](https://create-react-app.dev/), y por lo tanto toda la documentación del sitio oficial también puede consultarse para saber más.
-
 ## :point_up: Prerrequisitos - para instalar antes de empezar
+
+> ⚠️ El ejemplo viene preparado para ser ejecutado junto a una API, que puede crearse desde [este repositorio](https://github.com/surprograma/semilla-nest-typeorm).
 
 Vas a necesitar un IDE o al menos un editor de texto que coloree la sintaxis. Recomendamos utilizar [Visual Studio Code](https://code.visualstudio.com/) - que se lleva muy bien con proyectos JavaScript - enriquecido con los siguientes plugins:
 
@@ -21,8 +23,6 @@ Vas a necesitar un IDE o al menos un editor de texto que coloree la sintaxis. Re
 - [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
 
 Para ejecutar el código es necesario tener NodeJS en su versión 18 (`lts/hydrogen`). Para instalarlo recomendamos utilizar el manejador de versiones [`nvm`](https://github.com/nvm-sh/nvm), aunque también podés hacerlo manualmente siguiendo las instrucciones adecuadas para tu sistema operativo.
-
-⚠️ El ejemplo viene preparado para ser ejecutado junto a una API, que puede crearse desde [este repositorio](https://github.com/surprograma/semilla-nest-typeorm).
 
 ## :ballot_box_with_check: Configuración inicial del proyecto
 
