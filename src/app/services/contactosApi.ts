@@ -21,12 +21,18 @@ const contactosApi = baseApi
           method: 'POST',
           body,
         }),
-        invalidatesTags: ['Contacto'],
+        // Invalida solamente el getContactos, no afecta a getContactoById
+        invalidatesTags: [{ type: 'Contacto', id: 'LIST' }],
       }),
       getContactos: builder.query<Contacto[], void>({
         query: () => '/contactos',
         providesTags: (result) =>
-          result?.map(({ id }) => ({ type: 'Contacto', id })) ?? [],
+          result
+            ? [
+                ...result.map(({ id }) => ({ type: 'Contacto' as const, id })),
+                { type: 'Contacto', id: 'LIST' },
+              ]
+            : [{ type: 'Contacto', id: 'LIST' }],
       }),
       getContactoById: builder.query<Contacto, number | string>({
         query: (id) => `/contactos/${id}`,
