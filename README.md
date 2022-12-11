@@ -65,3 +65,7 @@ npm start
 # Ejecuta los tests y se queda esperando por cambios.
 npm test
 ```
+
+## :rocket: Despliegue
+
+El proyecto puede desplegarse automáticamente en [Vercel](https://vercel.com/), configurando la variable de entorno `REACT_APP_API_URL` con la URL donde esté desplegada la API.
